@@ -43,6 +43,7 @@ indent() {
 }
 
 echo "-----> Install ffmpeg"
+apt-get install libav-tools
 VENDOR_DIR="vendor"
 DOWNLOAD_URL="http://flect.github.io/heroku-binaries/libs/ffmpeg.tar.gz"
 
