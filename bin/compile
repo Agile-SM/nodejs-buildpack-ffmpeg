@@ -60,16 +60,6 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:${HOME}/vendor/ffmpeg"' >> $PROFILE_PATH
 
-### Install Python
-
-echo "-----> Install Python"
-wget http://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
-tar xzvf Python-2.7.14.tgz
-cd Python-2.7.14
-./configure
-make
-make install
-echo "-----> Python se instalo"
 
 ### Handle errors
 
